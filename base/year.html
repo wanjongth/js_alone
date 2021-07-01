@@ -1,0 +1,23 @@
+<script>
+    const input = Number(prompt('태어난 해를 입력해주세요.', ''))
+
+    if (input === 0) {alert('원숭이 띠입니다.')}
+    else if (input === 1) {alert('닭 띠입니다.')}
+    else if (input === 2) {alert('개 띠입니다.')}
+    else if (input === 3) {alert('돼지 띠입니다.')}
+    else if (input === 4) {alert('쥐 띠입니다.')}
+    else if (input === 5) {alert('소 띠입니다.')}
+    else if (input === 6) {alert('호랑이 띠입니다.')}
+    else if (input === 7) {alert('토끼 띠입니다.')}
+    else if (input === 8) {alert('용 띠입니다.')}
+    else if (input === 9) {alert('뱀 띠입니다.')}
+    else if (input === 10) {alert('말 띠입니다.')}
+    else if (input === 11) {alert('양 띠입니다.')}
+
+    const tti = '신,유,술,해,자,축,인,묘,진,사,오,미'.split(',')
+    const year = '경,신,임,계,갑,을,병,정,무,기'.split(',')
+    const input1 = input%12
+    const input2 = input%10
+    alert(`${input}년은 ${year[input2]}${tti[input1]}년 입니다.`)
+
+</script>

@@ -1,0 +1,74 @@
+<body>
+    <script>
+        //대문자로 시작하면 클래스
+        Array
+        Number
+        Component
+        Pet
+        //클래스가 아니다
+        ARRAY
+        NUMBER
+
+        // 소문자로 시작하면 4가지
+        alert('abc') // 함수
+        Array.length // 속성(length)
+        input // 변수
+        Math.abs(-273) // 메소드
+        Math.PI // 속성(PI)
+
+        // js ==, != -> 예측 불가능한 오류
+        a === b
+        a !== b
+        // 드모르간
+        !(12 <= currentTime && currentTime <= 13)
+        // -> 부등식은 반대로, 논리곱 논리합 교체
+        currentTime < 12  || currentTime > 13
+        
+        // 자료형 검사, 괄호도 사용
+        typeof 'string'
+        typeof 123
+        typeof true
+        
+        // 템플릿 - 백틱사용
+        '1 + 2 의 값은 ' + (1 + 2) + '입니다.'
+        `1 + 2 의 값은 ${1+2} + 입니다`
+
+        // 상수
+        const pi = 3.14
+        //const 식별자 = '자료'
+
+        // 상수 관련 오류
+        const pi = 3.15 // 중복 선언 불가
+        const a // 자료가 없기때문에 에러
+        pi = 3.145 // 상수의 값을 변경시키려 함
+
+        // 변수
+        let pi2 = 3.14
+        pi2 = 31.455
+        let pi
+        // 다 가능
+        // 같은 이름으로는 불가
+        let a = 10
+        let a = 20
+        
+        // js에서는 기본적으로는 상수를 사용, 필요한 경우 변수 사용
+            // 어떻게든 해볼테니 정보를 줘 -> 성능 최적화 위해
+        // C, Java, C3, C++ -> 코드를 작성, 컴파일
+        // 루비, 파이썬, 자바스크립트, 루아 -> 기본적으로 인터프리터 언어 -> 컴파일 최적화 힘듦
+
+        // 증감 연산자 - 값이 변하기 때문에 당연히 변수에 사용
+        let a = 0
+        a += 1 // 너무 많이쓰다보니
+        a++
+        a -= 1
+        a--
+
+        // undefined 자료형
+        // 상수와 변수로 선언하지 않은 식별자
+        typeof(b)
+        // 값이 없는 변수
+        let b
+        typeof(b)
+
+    </script>
+</body>

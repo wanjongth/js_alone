@@ -1,0 +1,14 @@
+<script>
+    const a = ['안녕',1,2,'하세요']
+    // 배열 뒤에 요소 추가
+    a.push(123)
+    // 배열 중간에 요소 추가 splice(인덱스,0,요소)
+    a.splice(1,0,'추가') // 해당 위치에 요소 추가
+    // 인덱스로 배열 요소 제거 splice(인덱스,1)
+    a.splice(1,1)
+    // 인덱스 찾기
+    a.indexOf(1)
+    
+    const idx = a.indexOf('하세요')
+    a.splice(idx,1)
+</script>
